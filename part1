@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int ECRIRE_TAB(int TAB[] ,int N);
+
+int main() {
+
+   int TAB[100];
+   int N;
+   printf("Donner la taille du tableau: ");
+   scanf("%d",&N);
+   for(int i=0;i<N;i++){
+    scanf("%d",&TAB[i]);
+   }
+
+      ECRIRE_TAB( TAB , N);
+
+
+
+
+
+return 0;
+
+}
+ int ECRIRE_TAB(int TAB[] ,int N){
+    printf("les valeurs de tableau est :\n");
+     for(int i=0;i<N;i++){
+          printf("%d  ",TAB[i]);
+      }
+      return 0;
+}
+
+
+
